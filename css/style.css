@@ -179,7 +179,7 @@ background: #2F303A;
 /* <--!Features */
 .features-container {
    
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 94px;
@@ -219,29 +219,22 @@ background: #2F303A;
 
 /* <--!чим займаємось */
 .activity-container {
-   display: flex;
-    width: 1230px;
+  display: flex;
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
 }
-.activity-list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
 
- .activity-list-item {
+ .activity-list-img-item {
     width: 370px;
-    margin-right: 30px;
+   
 }
-.activity-list-item :nth-child(3n){
-    margin-right: 0;
-}
+
 .activity-title {
   
     margin: auto;
@@ -249,19 +242,25 @@ background: #2F303A;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-
+}
+.card-set-img {
+    display: flex;
+   
+}
+.card-set-img-item {
+    margin-right: 30px;
 }
 
 /* <--!команда */
 .team-container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
 }
-.card-set {
+.card-set-list {
     display: flex;
     padding: 0;
     margin: 0;
@@ -335,7 +334,6 @@ img {
     font-size: 26px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
 }
 
@@ -392,23 +390,20 @@ img {
     color: var(--secondary-text-color);
 }
 .projects-container {
-    display: flex;
-    width: 1230px;
+   
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 94px;
     padding-bottom: 94px;
+   
+   
 }
 .projects-list-filters {
     display: flex;
-    align-items: center;
-    list-style: none;
-    padding-left: none;
-    margin-top: none;
-
-
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .project-btn {
@@ -424,6 +419,7 @@ img {
     letter-spacing: 0.03em;
 
     color: #212121;
+  
 }
 
 .project-btn:hover {
@@ -453,16 +449,14 @@ img {
 .card-set {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .card-set-item {
     width: 370px;
-    margin-right: 30px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE
-}
-.card-set-item :nth-child(3n) {
-    margin-right: 0;
-
+    border: 1px solid #EEEEEE;
+    
+    
 }
 .title {
     padding-top: 20px;
