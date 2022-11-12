@@ -177,6 +177,9 @@ background: #2F303A;
 }
 
 /* <--!Features */
+.originality {
+    display: none;
+}
 .features-container {
    
     width: 1200px;
@@ -465,7 +468,8 @@ img {
     padding-left: 24px;
 }
 
-.project-title {
+.projects-title {
+    display: none;
     font-style: normal;
     font-size: 18px;
     line-height: 2;
