@@ -37,19 +37,18 @@ img {
     min-width: 100%;
     height: auto;
 }
-
-
-
-/* <--шапка */
-.header-container {
+.container {
     display: flex;
     align-items: center;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+/* <--шапка */
+
+
 .logo {
     text-decoration: none;
     font-family: 'Raleway';
@@ -59,7 +58,7 @@ img {
     line-height: 31px;
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
+  margin-right: 93px;
 
     letter-spacing: 0.03em;
 
@@ -93,9 +92,9 @@ img {
 
 
 .nav-link {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
-    line-height: 1.14;
+    line-height:16px;
     letter-spacing: 0.02em;
 
     color: var(--title-text-color);
@@ -111,6 +110,12 @@ img {
     color: var(--primary-tex-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    font-family: 'Roboto';
+        font-style: normal;
+         font-weight:600;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
 }
 
 .contact-link:hover,
@@ -126,14 +131,16 @@ img {
 /* <--!main */
 /* <--!герой */
 .hero {
+   display: flex;
+   justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 background: #2F303A;
 }
 
 
 .hero-title {
-  
-  
-
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -142,21 +149,13 @@ background: #2F303A;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
+    
     color: #FFFFFF;
 
 }
 
 .hero-btn {
-    display: block;
-    margin: auto;
-    font-family: inherit;
-    font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-
-
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -165,7 +164,7 @@ background: #2F303A;
 
     color: var(--first-accent-color);
     border: #FFFFFF;
-    cursor: pointer;
+  
     border-top-left-radius: 4px ;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -174,21 +173,16 @@ background: #2F303A;
     padding-bottom: 10px;
     padding-left: 29px;
     padding-right: 35px;
+ 
 }
 
 /* <--!Features */
+.features {
+    padding-top:94px ;
+    padding-bottom: 94px;
+}
 .originality {
     display: none;
-}
-.features-container {
-   
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
 }
 .features-list {
     display: flex;
@@ -221,16 +215,9 @@ background: #2F303A;
 }
 
 /* <--!чим займаємось */
-.activity-container {
-  display: flex;
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
+.activity {
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
  .activity-list-img-item {
@@ -248,25 +235,18 @@ background: #2F303A;
 }
 .card-set-img {
     display: flex;
-   
 }
+
 .card-set-img-item {
     margin-right: 30px;
 }
 
 /* <--!команда */
-.team-container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 .card-set-list {
     display: flex;
     padding: 0;
     margin: 0;
+  
 
 }
 .team-title {
@@ -317,19 +297,15 @@ img {
 
 /* <--!footer */
 .footer {
-    background: var(--title-text-color);
-}
-.footer-container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+
+ 
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom:60px;
+    background: var(--title-text-color); 
 }
 
 .logo-footer {
+  
 
     font-family: 'Raleway';
     font-style: normal;
@@ -337,7 +313,11 @@ img {
     font-size: 26px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: var(--secondary-text-color); 
+    margin-bottom: 20px;
+    text-decoration: none;
+   
+
 }
 
 
@@ -354,6 +334,8 @@ img {
     letter-spacing: 0.03em;
 
     color: var(--first-accent-color);
+    margin-bottom: 9px;
+    
 }
 
 .address-link:hover,
@@ -370,6 +352,7 @@ img {
     letter-spacing: 0.03em;
 
     color: var(--second-accent-color);
+    margin-bottom: 9px;
 }
 
 .address-link-mail:hover,
@@ -392,16 +375,13 @@ img {
 .address-link-tel:focus {
     color: var(--secondary-text-color);
 }
-.projects-container {
-   
+.projects {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 94px;
-   
-   
+padding-bottom: 94px;
 }
 .projects-list-filters {
     display: flex;
@@ -414,7 +394,7 @@ img {
     border: #FFFFFF;
 
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.6;
 
@@ -422,6 +402,10 @@ img {
     letter-spacing: 0.03em;
 
     color: #212121;
+    padding-top: 6px;
+    padding-right: 25px;
+    padding-bottom: 6px;
+    padding-left: 25px;
   
 }
 
@@ -437,6 +421,8 @@ img {
 .project-btn-second {
     width: 125px;
     margin-right: 8px;
+  
+
 }
 .project-btn-third {
     width: 112px;
@@ -457,9 +443,7 @@ img {
 .card-set-item {
     width: 370px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    
-    
+border: 1px solid #EEEEEE;
 }
 .title {
     padding-top: 20px;
@@ -470,6 +454,7 @@ img {
 
 .projects-title {
     display: none;
+    font-weight: 700;
     font-style: normal;
     font-size: 18px;
     line-height: 2;
@@ -481,7 +466,8 @@ img {
 
 .project-text {
     font-size: 16px;
-    line-height: 1.88;
+    font-weight: 400;
+    line-height: 30px;
 
     letter-spacing: 0.03em;
 
